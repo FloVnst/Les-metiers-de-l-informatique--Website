@@ -1,0 +1,39 @@
+html {
+    background-color: #0c1419;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    align-self: flex-start;
+    background-color: #272A2D;
+    width: 100vw;
+    height: 12vh;
+    min-height: 80px;
+    max-height: 120px;
+}
+
+article {
+    width: 70vw;
+    height: 88vh;
+    min-height: 400px;
+    background-color: #0F191E;
+    overflow-y: auto;
+}
+
+footer {
+    align-self: flex-start;
+    background-color: #272A2D;
+    height: 10vh;
+    min-height: 60px;
+    width: 100vw;
+}
