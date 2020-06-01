@@ -11,13 +11,18 @@ body {
     width: 98vw;
     height: 100vh;
     margin: 0;
+    font-family: sans-serif;
 }
 
 
 /*--------------HEADER----------------*/
 
 header {
+    display: flex;
+    flex-direction: row;
     align-self: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #272A2D;
     width: 100vw;
     height: 12vh;
@@ -25,43 +30,18 @@ header {
     max-height: 120px;
 }
 
-#header-triangle {
-    position: relative;
-    width: -webkit-fill-available;
-    transition: top ;
-    top: 75px;
-}  
-
-#header-container {
-    display: flex;
-    width: -webkit-fill-available;
-    position: absolute;
-    z-index: 1;
-    flex-direction: row;
-}
-
-#header-container img {
-    max-width: 150px;
+header img {
+    max-height: 100px;
+    min-height: 70px;
+    height: 10vh;
     margin: 15px;
 }
 
-#header-container div {
+header h1 {
     color: white;
-    align-self: center;
+    font-weight: 700;
+    font-size: 25px;
     margin-left:30px;
-    font-size: 30px;
-    transition: font-size .1s;
-    flex: none;
-    align-items: center;
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 1990px) {
-    #header-triangle{top: 112px; transition: top 1s;}
-}
-
-@media only screen and (max-width: 700px) {
-    #header-container div {width: 25%; font-size: 25px; transition: font-size .5s;}
 }
 
 /*--------------------------------------*/
