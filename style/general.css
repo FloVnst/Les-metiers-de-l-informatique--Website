@@ -13,6 +13,9 @@ body {
     margin: 0;
 }
 
+
+/*--------------HEADER----------------*/
+
 header {
     align-self: flex-start;
     background-color: #272A2D;
@@ -21,6 +24,47 @@ header {
     min-height: 80px;
     max-height: 120px;
 }
+
+#header-triangle {
+    position: relative;
+    width: -webkit-fill-available;
+    transition: top ;
+    top: 75px;
+}  
+
+#header-container {
+    display: flex;
+    width: -webkit-fill-available;
+    position: absolute;
+    z-index: 1;
+    flex-direction: row;
+}
+
+#header-container img {
+    max-width: 150px;
+    margin: 15px;
+}
+
+#header-container div {
+    color: white;
+    align-self: center;
+    margin-left:30px;
+    font-size: 30px;
+    transition: font-size .1s;
+    flex: none;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1990px) {
+    #header-triangle{top: 112px; transition: top 1s;}
+}
+
+@media only screen and (max-width: 700px) {
+    #header-container div {width: 25%; font-size: 25px; transition: font-size .5s;}
+}
+
+/*--------------------------------------*/
 
 article {
     width: 70vw;
