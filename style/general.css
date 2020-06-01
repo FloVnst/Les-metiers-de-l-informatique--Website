@@ -30,14 +30,14 @@ header {
     max-height: 120px;
 }
 
-header img {
+header > img {
     max-height: 100px;
     min-height: 70px;
     height: 10vh;
     margin: 15px;
 }
 
-header h1 {
+header > h1 {
     color: white;
     font-weight: 700;
     font-size: 25px;
