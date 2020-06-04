@@ -61,10 +61,9 @@ main {
     align-items: center;
     padding-top: 15px;
     width: 70vw;
-    height: 88vh;
-    min-height: 400px;
+    height: max(400px, 78vh);
     background-color: #0F191E;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 
@@ -87,7 +86,6 @@ footer > div {
     align-items: center;
     margin : 0;
     display: flex;
-    width: 100vw;
 }
 
 footer > div > a {
