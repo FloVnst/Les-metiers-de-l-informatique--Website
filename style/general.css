@@ -51,7 +51,7 @@ header > a > h1 {
 
 /*--------------PAGE CONTENT--------------*/
 
-article {
+main {
     width: 70vw;
     min-width: 800px;
     height: 88vh;
@@ -83,9 +83,10 @@ footer > div {
     width: 100vw;
 }
 
-footer > div > a {
+footer > div > a, footer > div > p {
     padding: 0;
-    margin: 0;
+    margin: 7px 10px;
+    text-align: center;
 }
 
 #footerTop {
@@ -102,10 +103,10 @@ footer > div > a {
 #footerBottom{
     justify-content: center;
     background-color: #3B4044;
-    height: 20px;
+    min-height: 20px;
 }
 
 #footerBottom > p{
-    color : white;
-    font-size: 13px;
+    color : #e0e0e0;
+    font-size: 12px;
 }
