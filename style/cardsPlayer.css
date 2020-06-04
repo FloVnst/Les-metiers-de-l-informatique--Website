@@ -50,7 +50,8 @@ button {
 }
 
 .previousCategory {
-    margin-top: 30px;
+    padding-top: 10px;
+    margin-top: 20px;
 }
 
 .previousCard {
@@ -234,7 +235,10 @@ button {
         display: none;
     }
     .card {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+    .nextCategory {
+        margin-bottom: 20px;
     }
 }
 
@@ -251,6 +255,9 @@ button {
     }
     #footerBottom > p {
         font-size: 9px;
+    }
+    #goToCategoryMenu {
+        margin-bottom: 15px;
     }
 }
 
