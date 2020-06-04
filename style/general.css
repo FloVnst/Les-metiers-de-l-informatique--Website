@@ -126,6 +126,7 @@ footer > div > a, footer > div > p {
 
 @media screen and (max-width: 900px) {
     main {
+        flex-direction: column-reverse;
         width: 100vw !important;
     }
 }
