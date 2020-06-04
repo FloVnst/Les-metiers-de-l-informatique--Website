@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="795" viewBox="0 0 101 795">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="395.5" y1="986" x2="395.5" y2="191" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7c7c7"/>
+      <stop offset="0.499" stop-color="#efefef"/>
+      <stop offset="1" stop-color="#c7c7c7"/>
+    </linearGradient>
+  </defs>
+  <path id="Fléche_gauche_1" data-name="Fléche gauche 1" class="cls-1" d="M345.863,986v-2.578S445.855,593.517,446,587.211L345.863,194.438V191H345V986h0.863Z" transform="translate(-345 -191)"/>
+</svg>
