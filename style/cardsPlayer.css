@@ -17,7 +17,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px 1vw 35px 1vw;
+    margin: 5px 1vw 5px 1vw;
 }
 
 .goToCategoryButton {
@@ -47,6 +47,10 @@ button {
 
 .previousCategory, .nextCategory {
     align-items: center;
+}
+
+.previousCategory {
+    margin-top: 30px;
 }
 
 .previousCard {
@@ -109,6 +113,8 @@ button {
     align-items: center;
     justify-content: flex-start;
     height: 35vh;
+    min-width: 250px;
+    max-width: 60vw;
     border-radius: 10px;
     margin: 0 30px 50px 30px;
     color: white;
@@ -123,7 +129,6 @@ button {
     background-color: #f50000aa;
     width: 96%;
     padding: 2%;
-    min-width: 250px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -134,7 +139,6 @@ button {
 .cardContent {
     display: flex;
     width: 90%;
-    min-width: 250px;
     padding: 0 5% 25px 5%;
     flex-direction: column;
     align-items: center;
@@ -229,14 +233,20 @@ button {
     .previousCard > span, .nextCard > span {
         display: none;
     }
+    .card {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .previousCard img, .nextCard img {
-        width: 4vw !important;
+        width: 4vw;
     }
     .cardContent {
         min-width: unset;
+    }
+    .card {
+        max-width: unset;
         width: 70vw;
     }
     #footerBottom > p {
