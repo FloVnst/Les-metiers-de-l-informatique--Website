@@ -45,9 +45,9 @@ header > a {
     text-decoration: none;
 }
 
-header > a > h1 {
+header h1 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 23px;
     margin-left:30px;
 }
 
@@ -60,6 +60,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-top: 15px;
+    padding-bottom: 30px;
     width: 70vw;
     height: max(400px, 78vh);
     background-color: #0F191E;
@@ -124,8 +125,10 @@ footer > div > a, footer > div > p {
 /*--------------SMALL SCREENS ADJUSTMENTS--------------*/
 
 @media screen and (max-width: 900px) {
+    header > a {
+        width: 100%;
+    }
     main {
-        flex-direction: column-reverse;
         width: 100vw !important;
     }
 }

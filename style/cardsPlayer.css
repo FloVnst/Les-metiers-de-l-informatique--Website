@@ -135,16 +135,25 @@ button {
 
 .cardTitle > h3 {
     margin: 0;
+    font-size: 20px;
 }
 
 .cardContent {
     display: flex;
     width: 90%;
-    padding: 0 5% 25px 5%;
+    padding: 0 5% 10px 5%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+
+
+.jobDescription {
+    text-align: center;
 }
 
 .jobIllustration {
@@ -159,11 +168,12 @@ button {
 .keyInformation > li {
     list-style: none;
     font-weight: bold;
-    margin: 5px;
+    margin: 7px;
 }
 
 .keyInformation > li > span {
     font-weight: normal;
+    color: #d0d0d0;
 }
 
 
@@ -230,6 +240,15 @@ button {
 
 /*--------------SMALL SCREENS ADJUSTMENTS--------------*/
 
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    #goToCategoryMenu {
+        margin: 30px 5px 0 5px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .previousCard > span, .nextCard > span {
         display: none;
@@ -255,9 +274,6 @@ button {
     }
     #footerBottom > p {
         font-size: 9px;
-    }
-    #goToCategoryMenu {
-        margin-bottom: 15px;
     }
 }
 
