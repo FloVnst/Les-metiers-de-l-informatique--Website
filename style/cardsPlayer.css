@@ -1,0 +1,234 @@
+/*--------------CARDS PLAYER----------------*/
+
+#categoriesManager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+button {
+    cursor: pointer;
+}
+
+#goToCategoryMenu {
+    margin: 5px 1vw 35px 1vw;
+}
+
+.navigationButton {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+}
+
+.navigationButton img {
+    opacity: 0.7;
+    transition: opacity 0.25s;
+}
+
+.navigationButton:hover img {
+    opacity: 1;
+}
+
+.navigationButton > span {
+    margin: 5px 0;
+    color: #dadada;
+}
+
+.previousCategory, .nextCategory {
+    align-items: center;
+}
+
+.previousCard {
+    align-items: flex-end;
+}
+
+.nextCard {
+    align-items: flex-start;
+}
+
+.previousCard > img, .nextCard > img {
+    height: 30vh;
+}
+
+.previousCategory > img, .nextCategory > img {
+    width: 30vh;
+}
+
+
+/*--------------CATEGORIES MANAGER----------------*/
+
+.category.displayed {
+    display: flex;
+}
+
+.category {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+/*--------------CARDS MANAGER----------------*/
+
+.cardsManager {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.card.displayed {
+    display: flex !important;
+}
+
+.card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 35vh;
+    border-radius: 10px;
+    margin: 0 30px 50px 30px;
+    color: white;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f50000aa;
+    width: 96%;
+    padding: 2%;
+    min-width: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardTitle > h3 {
+    margin: 0;
+}
+
+.cardContent {
+    display: flex;
+    width: 90%;
+    min-width: 250px;
+    padding: 0 5% 25px 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    background-color: rgba(57, 74, 84, 0);
+}
+
+.jobIllustration {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.keyInformation {
+    padding: 0;
+}
+
+.keyInformation > li {
+    list-style: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.keyInformation > li > span {
+    font-weight: normal;
+}
+
+
+/*Themes des cartes selon la catégorie*/
+
+#categoryWeb .card {
+    box-shadow: rgba(240, 95, 136, 0.5) 0 0 70px;
+    background-color: #3B3F48;
+}
+
+#categoryWeb .cardTitle {
+    color: #292932;
+    background-color: #F05F88;
+}
+
+#categoryWeb h2 {
+    color: #F05F88;
+}
+
+#categorySecurity .card {
+    box-shadow: yellow 0 0 30px;
+}
+
+#categorySecurity .cardTitle {
+    background-color: #266AB0;
+}
+
+
+#categoryVideoGames .card {
+    box-shadow: yellow 0 0 30px;
+}
+
+#categoryVideoGames .cardTitle {
+    background-color: #57296F;
+}
+
+
+#categoryScience .card {
+    box-shadow: yellow 0 0 30px;
+}
+
+#categoryScience .cardTitle {
+    background-color: #298945;
+}
+
+
+#categoryData .card {
+    box-shadow: yellow 0 0 30px;
+}
+
+#categoryData .cardTitle {
+    background-color: #B57329;
+}
+
+
+#categoryTrading .card {
+    box-shadow: yellow 0 0 30px;
+}
+
+#categoryTrading .cardTitle {
+    background-color: #C32126;
+}
+
+
+/*--------------SMALL SCREENS ADJUSTMENTS--------------*/
+
+@media screen and (max-width: 460px) {
+    .previousCard > span, .nextCard > span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .previousCard > img, .nextCard > img {
+        width: 8vw;
+    }
+    .card {
+        min-width: unset;
+        width: 70vw;
+    }
+}

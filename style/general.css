@@ -14,6 +14,10 @@ body {
     font-family: sans-serif;
 }
 
+h1, h2 {
+    color: white;
+}
+
 
 /*--------------HEADER----------------*/
 
@@ -42,7 +46,6 @@ header > a {
 }
 
 header > a > h1 {
-    color: white;
     font-weight: 700;
     font-size: 25px;
     margin-left:30px;
@@ -52,12 +55,16 @@ header > a > h1 {
 /*--------------PAGE CONTENT--------------*/
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
     width: 70vw;
-    min-width: 800px;
     height: 88vh;
     min-height: 400px;
     background-color: #0F191E;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 
@@ -83,9 +90,12 @@ footer > div {
     width: 100vw;
 }
 
+footer > div > a {
+    margin: 7px 10px;
+}
+
 footer > div > a, footer > div > p {
     padding: 0;
-    margin: 7px 10px;
     text-align: center;
 }
 
@@ -97,16 +107,27 @@ footer > div > a, footer > div > p {
 #footerTop > a {
     color : white;
     text-decoration: underline;
-    font-weight: bolder;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 #footerBottom{
     justify-content: center;
     background-color: #3B4044;
-    min-height: 20px;
+    height: 27px;
 }
 
 #footerBottom > p{
     color : #e0e0e0;
-    font-size: 12px;
+    font-size: 11px;
+    margin: 3px 10px 0 10px;
+}
+
+
+/*--------------SMALL SCREENS ADJUSTMENTS--------------*/
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100vw !important;
+    }
 }

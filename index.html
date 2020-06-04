@@ -4,6 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Les métiers de l'informatique - IUT de Lens</title>
         <link rel="stylesheet" href="style/general.css">
         <link rel="stylesheet" href="style/cardsPlayer.css">
@@ -15,7 +16,7 @@
         <!-- Header -->
         <header>
 
-            <img src=".\images\icons\logo-iut.svg">
+            <img alt="Logo de l'IUT de Lens" src="./images/icons/logo-iut.svg">
 
             <a href="index.html">
                 <h1>Les métiers de l'informatique</h1>
@@ -41,11 +42,18 @@
 
             <!-- Gestionnaire des catégories -->
 
-            <article id="categoriesManager">
+            <div id="categoriesManager">
+
+                <!-- Bouton catégorie précédente -->
+                <button class="previousCategory navigationButton">
+                    <img alt="Bouton flèche haut" src="images/icons/upArrow.svg">
+                    <span>Catégorie précédente</span>
+                </button>
+
 
                 <!-- Catégorie Web -->
 
-                <section class="category" id="categoryWeb">
+                <section class="category displayed" id="categoryWeb">
 
                     <h2>Web</h2>
 
@@ -53,9 +61,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -63,41 +71,59 @@
                         <div class="cardsContainer">
 
                             <!-- Carte Développeur web -->
-                            <div class="jobCard" id="webDevelopper">
-                                <h3>Développeur Web</h3>
-                                <p class="jobDescription">
-                                    Lorem ipsum dolor si amet, consectetur vitare...
-                                </p>
-                                <ul>
-                                    <li class="formation">
-                                        Formation :
-                                        <span class="formationValue">
+                            <div class="card displayed" id="webDevelopper">
+
+                                <!-- Titre de la carte -->
+                                <div class="cardTitle">
+                                    <h3>Développeur Web</h3>
+                                </div>
+
+
+                                <!-- Contenu de la carte -->
+                                <div class="cardContent">
+                                    <img class="jobIllustration" src="images/pictures/web/devweb.png">
+
+                                    <p class="jobDescription">
+                                        Lorem ipsum dolor si amet, consectetur vitare...
+                                    </p>
+
+                                    <ul class="keyInformation">
+                                        <li class="formation">
+                                            Formation :
+                                            <span class="formationValue">
                                             Master Pro...
                                         </span>
-                                    </li>
-                                    <li class="salaire">
-                                        Salaire débutant :
-                                        <span class="salaireValue">
+                                        </li>
+                                        <li class="salaire">
+                                            Salaire débutant :
+                                            <span class="salaireValue">
                                             1 900 € brut mensuel
                                         </span>
-                                    </li>
-                                    <li class="evolution">
-                                        Perspectives d'évolution :
-                                        <span class="evolutionValue">
+                                        </li>
+                                        <li class="evolution">
+                                            Perspectives d'évolution :
+                                            <span class="evolutionValue">
                                             Chef de projet technique
                                         </span>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
                             </div>
 
 
                             <!-- Carte Webdesigner -->
-                            <div class="jobCard" id="webDesigner">
-                                <h3>Développeur Web</h3>
+                            <div class="card" id="webDesigner">
+
+                                <div class="cardTitle">
+                                    <h3>Développeur Web</h3>
+                                </div>
+
                                 <p class="jobDescription">
                                     Lorem ipsum dolor si amet, consectetur vitare...
                                 </p>
-                                <ul>
+
+                                <ul class="keyInformation">
                                     <li class="formation">
                                         Formation :
                                         <span class="formationValue">
@@ -117,11 +143,12 @@
                                         </span>
                                     </li>
                                 </ul>
+
                             </div>
 
 
                             <!-- Carte Chef de projet -->
-                            <div class="jobCard" id="projectManager">
+                            <div class="card" id="projectManager">
 
                             </div>
 
@@ -129,9 +156,9 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
 
                     </div>
@@ -150,9 +177,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -160,19 +187,19 @@
                         <div class="cardsContainer">
 
                             <!-- Développeur sécurité -->
-                            <div class="jobCard" id="securityDevelopper">
+                            <div class="card displayed" id="securityDevelopper">
 
                             </div>
 
 
                             <!-- Hacker éthique/Pentester -->
-                            <div class="jobCard" id="ethicalHacker">
+                            <div class="card" id="ethicalHacker">
 
                             </div>
 
 
                             <!-- Expert juridique en cybersécurité -->
-                            <div class="jobCard" id="LegalExpertInCybersecurity">
+                            <div class="card" id="LegalExpertInCybersecurity">
 
                             </div>
 
@@ -180,9 +207,9 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
 
                     </div>
@@ -201,9 +228,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -211,19 +238,19 @@
                         <div class="cardsContainer">
 
                             <!-- Game designer -->
-                            <div class="jobCard" id="gameDesigner">
+                            <div class="card displayed" id="gameDesigner">
 
                             </div>
 
 
                             <!-- Sound designer -->
-                            <div class="jobCard" id="soundDesigner">
+                            <div class="card" id="soundDesigner">
 
                             </div>
 
 
                             <!-- Testeur développement -->
-                            <div class="jobCard" id="betaTester">
+                            <div class="card" id="betaTester">
 
                             </div>
 
@@ -231,11 +258,10 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
-
                     </div>
 
                 </section>
@@ -252,9 +278,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -262,19 +288,19 @@
                         <div class="cardsContainer">
 
                             <!-- Ingénieur systèmes embarqués -->
-                            <div class="jobCard" id="embeddedSystemEngineer">
+                            <div class="card displayed" id="embeddedSystemEngineer">
 
                             </div>
 
 
                             <!-- Bio-informaticien -->
-                            <div class="jobCard" id="bioinformatician">
+                            <div class="card" id="bioinformatician">
 
                             </div>
 
 
                             <!-- Chercheur -->
-                            <div class="jobCard" id="researcher">
+                            <div class="card" id="researcher">
 
                             </div>
 
@@ -282,9 +308,9 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
 
                     </div>
@@ -303,9 +329,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -313,19 +339,19 @@
                         <div class="cardsContainer">
 
                             <!-- Architecte Big Data -->
-                            <div class="jobCard" id="bigDataArchitect">
+                            <div class="card displayed" id="bigDataArchitect">
 
                             </div>
 
 
                             <!-- Data analyst -->
-                            <div class="jobCard" id="dataAnalyst">
+                            <div class="card" id="dataAnalyst">
 
                             </div>
 
 
                             <!-- Data Protection Officer -->
-                            <div class="jobCard" id="dataProtectionOfficer">
+                            <div class="card" id="dataProtectionOfficer">
 
                             </div>
 
@@ -333,9 +359,9 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
 
                     </div>
@@ -354,9 +380,9 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard">
-                            <img src="images/icons/previousCard.svg">
-                            <span>Carte précédente</span>
+                        <button class="previousCard navigationButton">
+                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                            <span>Métier précédent</span>
                         </button>
 
 
@@ -364,19 +390,19 @@
                         <div class="cardsContainer">
 
                             <!-- Responsable e-commerce -->
-                            <div class="jobCard" id="eCommerceManager">
+                            <div class="card displayed" id="eCommerceManager">
 
                             </div>
 
 
                             <!-- Community Manager -->
-                            <div class="jobCard" id="communityManager">
+                            <div class="card" id="communityManager">
 
                             </div>
 
 
                             <!-- Chef de produit technique -->
-                            <div class="jobCard" id="technicalProductManager">
+                            <div class="card" id="technicalProductManager">
 
                             </div>
 
@@ -384,16 +410,24 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard">
-                            <img src="images/icons/nextCard.svg">
-                            <span>Carte suivante</span>
+                        <button class="nextCard navigationButton">
+                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                            <span>Métier suivant</span>
                         </button>
 
                     </div>
 
                 </section>
 
-            </article>
+
+
+                <!-- Bouton catégorie suivante -->
+                <button class="nextCategory navigationButton">
+                    <img alt="Bouton flèche bas" src="images/icons/downArrow.svg">
+                    <span>Catégorie suivante</span>
+                </button>
+
+            </div>
 
         </main>
 
