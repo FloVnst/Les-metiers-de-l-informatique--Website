@@ -37,33 +37,43 @@ header > img {
     margin: 15px;
 }
 
-header > h1 {
+header > a {
+    text-decoration: none;
+}
+
+header > a > h1 {
     color: white;
     font-weight: 700;
     font-size: 25px;
     margin-left:30px;
 }
 
-/*--------------------------------------*/
+
+/*--------------PAGE CONTENT--------------*/
 
 article {
     width: 70vw;
+    min-width: 800px;
     height: 88vh;
     min-height: 400px;
     background-color: #0F191E;
     overflow-y: auto;
 }
 
+
+/*--------------FOOTER--------------*/
+
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-self: flex-start;
     background-color: #272A2D;
     height: 10vh;
     min-height: 60px;
     width: 100vw;
 }
+
 
 footer > div {
     flex-direction: row;
@@ -78,15 +88,21 @@ footer > div > a {
     margin: 0;
 }
 
+#footerTop {
+    justify-content: space-around;
+    margin: auto 10px;
+}
+
 #footerTop > a {
     color : white;
     text-decoration: underline;
     font-weight: bolder;
-    
 }
 
 #footerBottom{
+    justify-content: center;
     background-color: #3B4044;
+    height: 20px;
 }
 
 #footerBottom > p{

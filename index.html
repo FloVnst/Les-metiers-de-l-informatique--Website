@@ -1,33 +1,374 @@
 <!DOCTYPE html>
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Les métiers de l'informatique - IUT de Lens</title>
-    <link rel="stylesheet" href="style/general.css">
-</head>
-<body>
-    <header>
-        <img src=".\images\icons\logo-iut.svg">
-        <h1>Les métiers de l'informatique</h1>
-    </header>
 
-    <article>
+    <head>
+        <meta charset="UTF-8">
+        <title>Les métiers de l'informatique - IUT de Lens</title>
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/cardsPlayer.css">
+    </head>
+
+
+    <body>
+
+        <!-- Header -->
+        <header>
+
+            <img src=".\images\icons\logo-iut.svg">
+
+            <a href="index.html">
+                <h1>Les métiers de l'informatique</h1>
+            </a>
+
+        </header>
+
+
         <!-- Contenu de la page -->
-    </article>
+        <article>
 
-    <footer>
-        <div id="footerTop">
-            <a href="sitemap.html"> Plan du site </a>
-            <a href="credits.html"> Crédits </a>
-        </div>
-        <div id="footerBottom">
-            <p> 
-                © 2020 Loïck Mercier - Alexy Pawlicky - Germain Poloudenny - Anaïs Revelle - Florian Vaneste - Marie Verraest. Tous droits réservés.
-            </p>
-        </div>
-    </footer>
+            <!-- Boutons affichant les différentes sections de la page -->
+            <nav id="goToCategoryMenu">
+                <button class="goToCategoryButton">Web</button>
+                <button class="goToCategoryButton">Securité</button>
+                <button class="goToCategoryButton">Jeux vidéo</button>
+                <button class="goToCategoryButton">Science</button>
+                <button class="goToCategoryButton">Data</button>
+                <button class="goToCategoryButton">Commerce</button>
+            </nav>
 
-    <!-- Scripts Javascript -->
-    <script src="scripts/cardsManager.js"></script>
-</body>
+
+
+            <!-- Gestionnaire des catégories -->
+
+            <div id="categoriesManager">
+
+                <!-- Catégorie Web -->
+
+                <section class="category" id="categoryWeb">
+
+                    <h2>Web</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Carte Développeur web -->
+                            <div class="jobCard" id="webDevelopper">
+
+                            </div>
+
+
+                            <!-- Carte Webdesigner -->
+                            <div class="jobCard" id="webDesigner">
+
+                            </div>
+
+
+                            <!-- Carte Chef de projet -->
+                            <div class="jobCard" id="projectManager">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Catégorie Sécurité -->
+
+                <section class="category" id="categorySecurity">
+
+                    <h2>Sécurité</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Développeur sécurité -->
+                            <div class="jobCard" id="securityDevelopper">
+
+                            </div>
+
+
+                            <!-- Hacker éthique/Pentester -->
+                            <div class="jobCard" id="ethicalHacker">
+
+                            </div>
+
+
+                            <!-- Expert juridique en cybersécurité -->
+                            <div class="jobCard" id="LegalExpertInCybersecurity">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Catégorie Jeux Vidéo -->
+
+                <section class="category" id="categoryVideoGames">
+
+                    <h2>Jeux vidéo</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Game designer -->
+                            <div class="jobCard" id="gameDesigner">
+
+                            </div>
+
+
+                            <!-- Sound designer -->
+                            <div class="jobCard" id="soundDesigner">
+
+                            </div>
+
+
+                            <!-- Testeur développement -->
+                            <div class="jobCard" id="betaTester">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Catégorie Science -->
+
+                <section class="category" id="categoryScience">
+
+                    <h2>Science</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Ingénieur systèmes embarqués -->
+                            <div class="jobCard" id="embeddedSystemEngineer">
+
+                            </div>
+
+
+                            <!-- Bio-informaticien -->
+                            <div class="jobCard" id="bioinformatician">
+
+                            </div>
+
+
+                            <!-- Chercheur -->
+                            <div class="jobCard" id="researcher">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Catégorie Data -->
+
+                <section class="category" id="categoryData">
+
+                    <h2>Data</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Architecte Big Data -->
+                            <div class="jobCard" id="bigDataArchitect">
+
+                            </div>
+
+
+                            <!-- Data analyst -->
+                            <div class="jobCard" id="dataAnalyst">
+
+                            </div>
+
+
+                            <!-- Data Protection Officer -->
+                            <div class="jobCard" id="dataProtectionOfficer">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- Catégorie Commerce -->
+
+                <section class="category" id="categoryTrading">
+
+                    <h2>Commerce</h2>
+
+                    <!-- Gestionnaire de cartes -->
+                    <div class="cardsManager">
+
+                        <!-- Bouton carte précédente -->
+                        <button class="previousCard">
+                            <img src="images/icons/previousCard.svg">
+                            <span>Carte précédente</span>
+                        </button>
+
+
+                        <!-- Div contenant toutes les cartes de la catégorie Web -->
+                        <div class="cardsContainer">
+
+                            <!-- Responsable e-commerce -->
+                            <div class="jobCard" id="eCommerceManager">
+
+                            </div>
+
+
+                            <!-- Community Manager -->
+                            <div class="jobCard" id="communityManager">
+
+                            </div>
+
+
+                            <!-- Chef de produit technique -->
+                            <div class="jobCard" id="technicalProductManager">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Bouton carte suivante -->
+                        <button class="nextCard">
+                            <img src="images/icons/nextCard.svg">
+                            <span>Carte suivante</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </article>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <div id="footerTop">
+                <a href="sitemap.html"> Plan du site </a>
+                <a href="credits.html"> Crédits </a>
+            </div>
+
+            <div id="footerBottom">
+                <p>© 2020 Loïck Mercier - Alexy Pawlicky - Germain Poloudenny - Anaïs Revelle - Florian Vaneste - Marie Verraest. Tous droits réservés.</p>
+            </div>
+
+        </footer>
+
+        <!-- Scripts Javascript -->
+        <script src="scripts/cardsManager.js"></script>
+
+    </body>
+
 </html>
