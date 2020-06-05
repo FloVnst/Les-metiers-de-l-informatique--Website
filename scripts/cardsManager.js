@@ -1,7 +1,4 @@
+// Scroll sur le bouton "catégorie précédente" lors du chargement de la page
 window.addEventListener("DOMContentLoaded", () => {
-    window.scrollTo({
-        top: document.querySelector("h1").offsetTop,
-        behavior: 'smooth'
-    });
-    document.querySelector(".previousCategory").scrollIntoView()
+    document.querySelector(".previousCategory").scrollIntoView();
 });
