@@ -32,12 +32,8 @@ button {
     transition: transform 0.45s;
 }
 
-.navigationButton:hover {
-    transform: scale(1.03);
-}
-
 .navigationButton:active {
-    transform: scale(1);
+    transform: scale(1.03);
 }
 
 .navigationButton img {
@@ -288,12 +284,8 @@ button {
     transition: background-color, transform .35s;
 }
 
-.goToCategoryButton:hover {
-    transform: scale(1.1);
-}
-
 .goToCategoryButton:active {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 #goToCategoryWeb {
