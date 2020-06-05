@@ -292,6 +292,10 @@ button {
     transform: scale(1.1);
 }
 
+.goToCategoryButton:active {
+    transform: scale(1);
+}
+
 #goToCategoryWeb {
     background-color: rgba(199, 35, 96, .8);
 }
