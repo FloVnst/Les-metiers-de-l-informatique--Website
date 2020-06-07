@@ -30,12 +30,12 @@
 
             <!-- Boutons affichant les différentes sections de la page -->
             <nav id="goToCategoryMenu">
-                <button class="goToCategoryButton" id="goToCategoryWeb">Web</button>
-                <button class="goToCategoryButton" id="goToCategoryVideoGames">Jeux vidéo</button>
-                <button class="goToCategoryButton" id="goToCategorySecurity">Securité</button>
-                <button class="goToCategoryButton" id="goToCategoryScience">Science</button>
-                <button class="goToCategoryButton" id="goToCategoryData">Data</button>
-                <button class="goToCategoryButton" id="goToCategoryTrading">Commerce</button>
+                <button class="goToCategoryButton" id="goToCategoryWeb" onclick="goTo(0, 0)">Web</button>
+                <button class="goToCategoryButton" id="goToCategoryVideoGames" onclick="goTo(1, 0)">Jeux vidéo</button>
+                <button class="goToCategoryButton" id="goToCategorySecurity" onclick="goTo(2, 0)">Securité</button>
+                <button class="goToCategoryButton" id="goToCategoryScience" onclick="goTo(3, 0)">Science</button>
+                <button class="goToCategoryButton" id="goToCategoryData" onclick="goTo(4, 0)">Data</button>
+                <button class="goToCategoryButton" id="goToCategoryTrading" onclick="goTo(5, 0)">Commerce</button>
             </nav>
 
 
@@ -45,7 +45,7 @@
             <div id="categoriesManager">
 
                 <!-- Bouton catégorie précédente -->
-                <button class="previousCategory navigationButton">
+                <button class="previousCategory navigationButton" onclick="previousCategory()">
                     <img alt="Bouton flèche haut" src="images/icons/upArrow.svg">
                     <span>Catégorie précédente</span>
                 </button>
@@ -61,7 +61,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton" onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -75,7 +75,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -117,7 +117,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -159,7 +159,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -198,7 +198,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton" onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -219,7 +219,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton" onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -233,7 +233,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -275,7 +275,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -317,7 +317,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -357,7 +357,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton"  onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -377,7 +377,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton" onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -391,7 +391,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -433,7 +433,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -475,7 +475,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -515,7 +515,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton" onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -536,7 +536,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton" onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -550,7 +550,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -592,7 +592,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -634,7 +634,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -674,7 +674,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton" onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -695,7 +695,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton" onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -709,7 +709,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -751,7 +751,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -793,7 +793,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -833,7 +833,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton" onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -854,7 +854,7 @@
                     <div class="cardsManager">
 
                         <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton">
+                        <button class="previousCard navigationButton"  onclick="previousCard()">
                             <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
                             <span>Métier précédent</span>
                         </button>
@@ -868,7 +868,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 1</h3>
                                 </div>
 
 
@@ -910,7 +910,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 2</h3>
                                 </div>
 
 
@@ -952,7 +952,7 @@
 
                                 <!-- Titre de la carte -->
                                 <div class="cardTitle">
-                                    <h3>Développeur Web</h3>
+                                    <h3>Développeur Web 3</h3>
                                 </div>
 
 
@@ -992,7 +992,7 @@
 
 
                         <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton">
+                        <button class="nextCard navigationButton"  onclick="nextCard()">
                             <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
                             <span>Métier suivant</span>
                         </button>
@@ -1004,7 +1004,7 @@
 
 
                 <!-- Bouton catégorie suivante -->
-                <button class="nextCategory navigationButton">
+                <button class="nextCategory navigationButton" onclick="nextCategory()">
                     <img alt="Bouton flèche bas" src="images/icons/downArrow.svg">
                     <span>Catégorie suivante</span>
                 </button>
@@ -1030,7 +1030,6 @@
 
         <!-- Scripts Javascript -->
         <script src="scripts/cardsManager.js"></script>
-
     </body>
 
 </html>
