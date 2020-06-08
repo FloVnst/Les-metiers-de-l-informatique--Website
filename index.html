@@ -2,1034 +2,1067 @@
 
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Les métiers de l'informatique - IUT de Lens</title>
-        <link rel="stylesheet" href="style/general.css">
-        <link rel="stylesheet" href="style/cardsPlayer.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les métiers de l'informatique - IUT de Lens</title>
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/cardsPlayer.css">
+</head>
 
 
-    <body>
+<body>
 
-        <!-- Header -->
-        <header>
+<!-- Header -->
+<header>
 
-            <img alt="Logo de l'IUT de Lens" src="./images/icons/logo-iut.svg">
+    <img alt="Logo de l'IUT de Lens" src="./images/icons/logo-iut.svg">
 
-            <a href="index.html">
-                <h1>Les métiers de l'informatique</h1>
-            </a>
+    <a href="index.html">
+        <h1>Les métiers de l'informatique</h1>
+    </a>
 
-        </header>
-
-
-        <!-- Contenu de la page -->
-        <main>
-
-            <!-- Boutons affichant les différentes sections de la page -->
-            <nav id="goToCategoryMenu">
-                <button class="goToCategoryButton" id="goToCategoryWeb" onclick="goTo(0, 0)">Web</button>
-                <button class="goToCategoryButton" id="goToCategoryVideoGames" onclick="goTo(1, 0)">Jeux vidéo</button>
-                <button class="goToCategoryButton" id="goToCategorySecurity" onclick="goTo(2, 0)">Securité</button>
-                <button class="goToCategoryButton" id="goToCategoryScience" onclick="goTo(3, 0)">Science</button>
-                <button class="goToCategoryButton" id="goToCategoryData" onclick="goTo(4, 0)">Data</button>
-                <button class="goToCategoryButton" id="goToCategoryTrading" onclick="goTo(5, 0)">Commerce</button>
-            </nav>
+</header>
 
 
+<!-- Contenu de la page -->
+<main>
 
-            <!-- Gestionnaire des catégories -->
+    <!-- Boutons affichant les différentes sections de la page -->
+    <nav id="goToCategoryMenu">
+        <button class="goToCategoryButton" id="goToCategoryWeb" onclick="goTo(0, 0)">Web</button>
+        <button class="goToCategoryButton" id="goToCategoryVideoGames" onclick="goTo(1, 0)">Jeux vidéo</button>
+        <button class="goToCategoryButton" id="goToCategorySecurity" onclick="goTo(2, 0)">Securité</button>
+        <button class="goToCategoryButton" id="goToCategoryScience" onclick="goTo(3, 0)">Science</button>
+        <button class="goToCategoryButton" id="goToCategoryData" onclick="goTo(4, 0)">Data</button>
+        <button class="goToCategoryButton" id="goToCategoryTrading" onclick="goTo(5, 0)">Commerce</button>
+    </nav>
 
-            <div id="categoriesManager">
 
-                <!-- Bouton catégorie précédente -->
-                <button class="previousCategory navigationButton" onclick="previousCategory()">
-                    <img alt="Bouton flèche haut" src="images/icons/upArrow.svg">
-                    <span>Catégorie précédente</span>
+
+    <!-- Gestionnaire des catégories -->
+
+    <div id="categoriesManager">
+
+        <!-- Bouton catégorie précédente -->
+        <button class="previousCategory navigationButton" onclick="previousCategory()">
+            <img alt="Bouton flèche haut" src="images/icons/upArrow.svg">
+            <span>Catégorie précédente</span>
+        </button>
+
+
+        <!-- Catégorie Web -->
+
+        <section class="category displayed" id="categoryWeb">
+
+            <h2>Web</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton" onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
                 </button>
 
 
-                <!-- Catégorie Web -->
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
 
-                <section class="category displayed" id="categoryWeb">
+                    <!-- Carte Développeur web -->
+                    <div class="card displayed" id="webDevelopper">
 
-                    <h2>Web</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton" onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Carte Développeur web -->
-                            <div class="card displayed" id="webDevelopper">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-
-
-                            <!-- Carte Webdesigner -->
-                            <div class="card" id="webDesigner">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Carte Chef de projet -->
-                            <div class="card" id="projectManager">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Développeur Web</h3>
                         </div>
 
 
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton" onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
+
+                            <p class="jobDescription">
+                                Technicien ou ingénieur, le développeur Web programme l'ensemble des fonctionnalités d'un site ou d'une application.<br><br>
+                                Il conçoit des solutions sur mesure à partir d'un cahier des charges.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Master Pro, Licence Pro
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            1 900 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet technique
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
 
-                </section>
 
+                    <!-- Carte Webdesigner -->
+                    <div class="card" id="webDesigner">
 
-
-                <!-- Catégorie Jeux Vidéo -->
-
-                <section class="category" id="categoryVideoGames">
-
-                    <h2>Jeux vidéo</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton" onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Game designer -->
-                            <div class="card displayed" id="gameDesigner">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Sound designer -->
-                            <div class="card" id="soundDesigner">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Testeur développement -->
-                            <div class="card" id="betaTester">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Webdesigner</h3>
                         </div>
 
 
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton"  onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/web/webdesigner.png" alt="">
+
+                            <p class="jobDescription">
+                                Son rôle est de réaliser des designs de sites web, mais aussi d'applications mobile.<br><br>
+                                Il est également amené à créer l'identité visuelle de marques ou d'entreprises.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Master Pro, Licence Pro
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            1 800 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet, Directeur artistique
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
 
-                </section>
 
+                    <!-- Carte Chef de projet -->
+                    <div class="card" id="projectManager">
 
-
-                <!-- Catégorie Sécurité -->
-
-                <section class="category" id="categorySecurity">
-
-                    <h2>Sécurité</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton" onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Développeur sécurité -->
-                            <div class="card displayed" id="securityDevelopper">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Hacker éthique/Pentester -->
-                            <div class="card" id="ethicalHacker">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Expert juridique en cybersécurité -->
-                            <div class="card" id="LegalExpertInCybersecurity">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Chef de projet</h3>
                         </div>
 
 
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton" onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/web/chefprojet.png" alt="">
 
-                    </div>
+                            <p class="jobDescription">
+                                Le chef de projet a pour mission de planifier et coordonner un projet.<br><br>
+                                Il doit également analyser les besoins des clients afin de concevoir un cahier des charges.<br><br>
+                                Ses compétences techniques sont étendues et doivent être complétées par de l’expérience.
+                            </p>
 
-                </section>
-
-
-
-                <!-- Catégorie Science -->
-
-                <section class="category" id="categoryScience">
-
-                    <h2>Science</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton" onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Ingénieur systèmes embarqués -->
-                            <div class="card displayed" id="embeddedSystemEngineer">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Diplôme d'ingénieur, Master, Master pro, License Pro
                                         </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            2 200 € brut mensuel
                                         </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Création de sa propre agence ou société de production
                                         </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Bio-informaticien -->
-                            <div class="card" id="bioinformatician">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Chercheur -->
-                            <div class="card" id="researcher">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                                </li>
+                            </ul>
                         </div>
-
-
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton" onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
-
                     </div>
 
-                </section>
+                </div>
 
 
-
-                <!-- Catégorie Data -->
-
-                <section class="category" id="categoryData">
-
-                    <h2>Data</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton" onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Architecte Big Data -->
-                            <div class="card displayed" id="bigDataArchitect">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Data analyst -->
-                            <div class="card" id="dataAnalyst">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Data Protection Officer -->
-                            <div class="card" id="dataProtectionOfficer">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton" onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- Catégorie Commerce -->
-
-                <section class="category" id="categoryTrading">
-
-                    <h2>Commerce</h2>
-
-                    <!-- Gestionnaire de cartes -->
-                    <div class="cardsManager">
-
-                        <!-- Bouton carte précédente -->
-                        <button class="previousCard navigationButton"  onclick="previousCard()">
-                            <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
-                            <span>Métier précédent</span>
-                        </button>
-
-
-                        <!-- Div contenant toutes les cartes de la catégorie Web -->
-                        <div class="cardsContainer">
-
-                            <!-- Responsable e-commerce -->
-                            <div class="card displayed" id="eCommerceManager">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 1</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Community Manager -->
-                            <div class="card" id="communityManager">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 2</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Chef de produit technique -->
-                            <div class="card" id="technicalProductManager">
-
-                                <!-- Titre de la carte -->
-                                <div class="cardTitle">
-                                    <h3>Développeur Web 3</h3>
-                                </div>
-
-
-                                <!-- Contenu de la carte -->
-                                <div class="cardContent">
-                                    <img class="jobIllustration" src="images/pictures/web/devweb.png" alt="">
-
-                                    <p class="jobDescription">
-                                        Lorem ipsum dolor si amet, consectetur vitare...
-                                    </p>
-
-                                    <ul class="keyInformation">
-                                        <li class="formation">
-                                            Formation :
-                                            <span class="formationValue">
-                                            Master Pro...
-                                        </span>
-                                        </li>
-                                        <li class="salaire">
-                                            Salaire débutant :
-                                            <span class="salaireValue">
-                                            1 900 € brut mensuel
-                                        </span>
-                                        </li>
-                                        <li class="evolution">
-                                            Perspectives d'évolution :
-                                            <span class="evolutionValue">
-                                            Chef de projet technique
-                                        </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Bouton carte suivante -->
-                        <button class="nextCard navigationButton"  onclick="nextCard()">
-                            <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
-                            <span>Métier suivant</span>
-                        </button>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- Bouton catégorie suivante -->
-                <button class="nextCategory navigationButton" onclick="nextCategory()">
-                    <img alt="Bouton flèche bas" src="images/icons/downArrow.svg">
-                    <span>Catégorie suivante</span>
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton" onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
                 </button>
 
             </div>
 
-        </main>
+        </section>
 
 
-        <!-- Footer -->
-        <footer>
 
-            <div id="footerTop">
-                <a href="sitemap.html"> Plan du site </a>
-                <a href="credits.html"> Crédits </a>
+        <!-- Catégorie Jeux Vidéo -->
+
+        <section class="category" id="categoryVideoGames">
+
+            <h2>Jeux vidéo</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton" onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
+                </button>
+
+
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
+
+                    <!-- Game designer -->
+                    <div class="card displayed" id="gameDesigner">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Game designer</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/jeux_video/gamedesigner.png" alt="">
+
+                            <p class="jobDescription">
+                                Le game designer a un rôle central dans la conception de jeux vidéo.<br><br>
+                                C'est lui qui définit le gameplay en le précisant dans le cahier des charges.<br><br>
+                                Il participe aussi à la création du design, ce qui nécessite une excellente maîtrise des logiciels de modélisation 3D et d'images de synthèse.<br><br>
+                                Il doit également connaître quelques langages de programmation.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Master, Licence Pro
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            1 800 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet technique
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Sound designer -->
+                    <div class="card" id="soundDesigner">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Sound designer</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/jeux_video/sounddesigner.png" alt="">
+
+                            <p class="jobDescription">
+                                Son rôle est d'imaginer l'environnement sonore du jeu et de créer une ambiance s'adaptant parfaitement au gameplay.<br><br>
+                                Il crée pour cela une charte sonore. Ce métier nécessite un certain sens artistique et des compétences techniques solides.<br><br>
+                                Il doit notamment maîtriser les logiciels de création de d'édition sonore, mais aussi des langages de programmation.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Master, Licence Pro
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            1 800 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet technique
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Testeur développement -->
+                    <div class="card" id="betaTester">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Testeur développement</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/jeux_video/testeur.png" alt="">
+
+                            <p class="jobDescription">
+                                Le testeur développement est le dernier maillon de la chaîne de production d'un jeu vidéo.<br><br>
+                                Il évalue la qualité de jeu (ambiance, décors, difficulté...) et signale tout bug aux équipes de développement afin de faire les corrections.<br><br>
+                                Son rôle est aussi d'anticiper les critiques des joueurs afin d'assurer un plus grand succès commercial au jeu.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        DUT Informatique, BTS
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        1 500 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Spécialisation (son, imagerie 3D...)
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton"  onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
+                </button>
             </div>
 
-            <div id="footerBottom">
-                <p>© 2020 Loïck Mercier – Alexy Pawlicky – Germain Poloudenny – Anaïs Revelle – Florian Vaneste – Marie Verraest. Tous droits réservés.</p>
+        </section>
+
+
+
+        <!-- Catégorie Sécurité -->
+
+        <section class="category" id="categorySecurity">
+
+            <h2>Sécurité</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton" onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
+                </button>
+
+
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
+
+                    <!-- Développeur sécurité -->
+                    <div class="card displayed" id="securityDevelopper">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Développeur Sécurité</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/securite/devsecurite.png" alt="">
+
+                            <p class="jobDescription">
+                                Sa mission est de développer des sites et applications sécurisés.<br><br>
+                                Lors de la conception, il met en place des contre-mesures face aux vulnérabilités.<br><br>
+                                Il possède donc de solides compétences en développement et en cybersécurité.<br><br>
+                                Une bonne veille technologique lui est également indispensable.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Diplôme d'ingénieur, Master, Licence pro CDAISI
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            3 000 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Création de son propre cabinet de conseil
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hacker éthique/Pentester -->
+                    <div class="card" id="ethicalHacker">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Hacker éthique</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/securite/hacker.png" alt="">
+
+                            <p class="jobDescription">
+                                Ce spécialiste de la sécurité offensive agit et pense comme un pirate afin de mieux les bloquer.<br><br>
+                                Ce profil est de plus en plus recherché par les entreprises afin de sécuriser leurs systèmes informatiques.<br><br>
+                                Il pratique des tests d'intrusion et des attaques afin de détecter les vulnérabilité et mieux protéger les entreprises.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Diplôme d'ingénieur, Master, Licence pro CDAISI
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            3 000 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Création de son propre cabinet de conseil
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Expert juridique en cybersécurité -->
+                    <div class="card" id="LegalExpertInCybersecurity">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Expert juridique en cybersécurité</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/securite/expertcybersecurite.png" alt="">
+
+                            <p class="jobDescription">
+                                L'expert juridique en cybersécurité conseille les entreprises pour les prémunir face aux attaques informatiques.<br><br>
+                                Il évalue les risques liés à un manque de sécurité (juridiques, économiques, technologiques et en termes d'image).<br><br>
+                                Cet expert participe aussi à la définition des objectifs stratégiques de l'entreprise concernant la sécurité.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Master informatique, Master en Droit + formation sur les systèmes d'information
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            2 5000 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Création de son propre cabinet de conseil
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton" onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
+                </button>
+
             </div>
 
-        </footer>
+        </section>
 
-        <!-- Scripts Javascript -->
-        <script src="scripts/cardsManager.js"></script>
-    </body>
+
+
+        <!-- Catégorie Science -->
+
+        <section class="category" id="categoryScience">
+
+            <h2>Science</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton" onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
+                </button>
+
+
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
+
+                    <!-- Ingénieur systèmes embarqués -->
+                    <div class="card displayed" id="embeddedSystemEngineer">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Ingénieur systèmes embarqués</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/science/ingesysteme.png" alt="">
+
+                            <p class="jobDescription">
+                                Alliant informatique et électronique, sa mission est de concevoir des systèmes embarqués.<br><br>
+                                Il peut s'agir par exemple d'un GPS, d'un escalator ou même d'un système de navigation aérien.<br><br>
+                                Cet ingénieur doit donc créer des programmes et les systèmes électroniques sur lesquels les implémenter.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Diplôme d'ingénieur
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            2 900 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet technique, Chercheur
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Bio-informaticien -->
+                    <div class="card" id="bioinformatician">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Bio-informaticien</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/science/bio.png" alt="">
+
+                            <p class="jobDescription">
+                                Faisant appel à de solides compétences en biologie et en informatique, son travail consiste en la conception de logiciels et algorithmes pour aider les chercheurs.<br><br>
+                                Il peut par exemple être amené à concevoir une intelligence artificielle afin de résoudre des problèmes complexes, en génétique notamment.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                            Doctorat, Master, Diplôme d'ingénieur
+                                        </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                            2 900 € brut mensuel
+                                        </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                            Chef de projet technique
+                                        </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chercheur -->
+                    <div class="card" id="researcher">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Chercheur</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/science/chercheur.png" alt="">
+
+                            <p class="jobDescription">
+                                Le but du chercheur est de faire progresser sa discipline ou de créer des produits innovants.<br><br>
+                                Il peut ensuite publier ses travaux dans des revues spécialisées ou mener des conférences en France et à l'étranger.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Doctorat, Master, Diplôme d'ingénieur
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        2 200 € brut mensuel dans le public, 3 000 € brut mensuel dans le privé
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Enseignant-chercheur, Direction de laboratoire, Encadrement de thèses
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton" onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Catégorie Data -->
+
+        <section class="category" id="categoryData">
+
+            <h2>Data</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton" onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
+                </button>
+
+
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
+
+                    <!-- Architecte Big Data -->
+                    <div class="card displayed" id="bigDataArchitect">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Architecte Big Data</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/data/bigdata.png" alt="">
+
+                            <p class="jobDescription">
+                                Le rôle de l'architecte big data est d'organiser la réception et le stockage de données brutes.<br><br>
+                                Il crée et optimise les infrastructures de stockage, de manipulation et de restitution de données.<br><br>
+                                De solides connaissances en bases de données NoSQL sont requises.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Master, Diplôme d'ingénieur
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        3 000 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Des projets de plus en plus complexes et des volumes de données plus importants
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Data analyst -->
+                    <div class="card" id="dataAnalyst">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Data analyst</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/data/dataanalyst.png" alt="">
+
+                            <p class="jobDescription">
+                                Sa mission est de collecter, stocker et traiter des données.<br><br>
+                                Il peut être amené à concevoir des algorithmes afin de traiter des données brutes.<br><br>
+                                Le but est ensuite d'aider les entreprises dans la prise de décision.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Master, Diplôme d'ingénieur
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        3 000 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Data scientist
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Data Protection Officer -->
+                    <div class="card" id="dataProtectionOfficer">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Data Protection Officer</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/data/protection.png" alt="">
+
+                            <p class="jobDescription">
+                                Le Data Protection Officer veille à ce que son entreprise respecte la législation sur la protection des données.<br><br>
+                                En cas de manquement, il met en place des solutions techniques (chiffrement, tokenisation...) pour mieux protéger les données personnelles des clients ou utilisateurs.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Master, Diplôme d'ingénieur + Formation juridique, Diplôme Universitaire DPO
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        2 800 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Chef de projet technique
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton" onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Catégorie Commerce -->
+
+        <section class="category" id="categoryTrading">
+
+            <h2>Commerce</h2>
+
+            <!-- Gestionnaire de cartes -->
+            <div class="cardsManager">
+
+                <!-- Bouton carte précédente -->
+                <button class="previousCard navigationButton"  onclick="previousCard()">
+                    <img alt="Bouton flèche gauche" src="images/icons/leftArrow.svg">
+                    <span>Métier précédent</span>
+                </button>
+
+
+                <!-- Div contenant toutes les cartes de la catégorie Web -->
+                <div class="cardsContainer">
+
+                    <!-- Responsable e-commerce -->
+                    <div class="card displayed" id="eCommerceManager">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Responsable e-commerce</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/commerce/ecommerce.png" alt="">
+
+                            <p class="jobDescription">
+                                Mêlant à la fois techniques du Web et de commercialisation, le responsable e-commerce met en place une stratégie digitale afin d'accroître ses ventes.<br><br>
+                                Il doit maitriser les principaux langages du Web et les stratégies de référencement sur les moteurs de recherche (SEO).<br><br>
+                                L'amélioration de l'expérience utilisateur est aussi une de ses plus grandes préoccupations.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                         Diplôme d'école de commerce, Master, Licence Pro
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        3 500 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                         Directeur digital, Directeur commercial, Directeur marketing
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Community Manager -->
+                    <div class="card" id="communityManager">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Community manager</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/commerce/marketing.png" alt="">
+
+                            <p class="jobDescription">
+                                La mission du community manager est d'animer une communauté autour d'une marque ou d'un produit.<br><br>
+                                Il utilise pour cela les réseaux sociaux (YouTube, Facebook, Twitter, Instagram...) et professionnels (Linkedin...).<br><br>
+                                Il doit avoir des compétences en rédaction web et en production graphique (photos, illustrations...).
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Diplôme d'école de commerce, Licence Pro
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        2 000 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Gestionnaire ou responsable des médias sociaux
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chef de produit technique -->
+                    <div class="card" id="technicalProductManager">
+
+                        <!-- Titre de la carte -->
+                        <div class="cardTitle">
+                            <h3>Chef de produit technique</h3>
+                        </div>
+
+
+                        <!-- Contenu de la carte -->
+                        <div class="cardContent">
+                            <img class="jobIllustration" src="images/pictures/commerce/chefprod.png" alt="">
+
+                            <p class="jobDescription">
+                                Il gère la vie d'un produit, de sa conception à sa commercialisation.<br><br>
+                                Lors du développement, son rôle est de vérifier à chaque étape que le produit correspond au cahier des charges et aux attentes des clients.<br><br>
+                                Il met ensuite en place une stratégie commerciale afin de préparer le lancement du produit.
+                            </p>
+
+                            <ul class="keyInformation">
+                                <li class="formation">
+                                    Formation :
+                                    <span class="formationValue">
+                                        Diplôme d'ingénieur ou d'école de commerce, Master
+                                    </span>
+                                </li>
+                                <li class="salaire">
+                                    Salaire débutant :
+                                    <span class="salaireValue">
+                                        2 250 € brut mensuel
+                                    </span>
+                                </li>
+                                <li class="evolution">
+                                    Perspectives d'évolution :
+                                    <span class="evolutionValue">
+                                        Directeur marketing, Ingénieur d'affaires, Directeur des études, Responsable de domaine
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton carte suivante -->
+                <button class="nextCard navigationButton"  onclick="nextCard()">
+                    <img alt="Bouton flèche droite" src="images/icons/rightArrow.svg">
+                    <span>Métier suivant</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Bouton catégorie suivante -->
+        <button class="nextCategory navigationButton" onclick="nextCategory()">
+            <img alt="Bouton flèche bas" src="images/icons/downArrow.svg">
+            <span>Catégorie suivante</span>
+        </button>
+
+    </div>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+    <div id="footerTop">
+        <a href="sitemap.html"> Plan du site </a>
+        <a href="credits.html"> Crédits </a>
+    </div>
+
+    <div id="footerBottom">
+        <p>© 2020 Loïck Mercier – Alexy Pawlicky – Germain Poloudenny – Anaïs Revelle – Florian Vaneste – Marie Verraest. Tous droits réservés.</p>
+    </div>
+
+</footer>
+
+<!-- Scripts Javascript -->
+<script src="scripts/cardsManager.js"></script>
+</body>
 
 </html>

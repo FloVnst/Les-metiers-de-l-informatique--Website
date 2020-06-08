@@ -18,6 +18,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px 1vw 5px 1vw;
+    max-width: 75%;
 }
 
 .goToCategoryButton {
@@ -72,11 +73,11 @@ button {
 }
 
 .previousCard > img, .nextCard > img {
-    height: 30vh;
+    height: 15vw;
 }
 
 .previousCategory > img, .nextCategory > img {
-    width: 30vh;
+    width: 15vw;
 }
 
 
@@ -102,7 +103,6 @@ button {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     width: 100%;
  }
 
 .cardsContainer {
@@ -110,7 +110,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    min-width: 35vw;
 }
 
 .card.displayed {
@@ -122,9 +122,9 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 35vh;
+    max-height: 35vh;
     min-width: 250px;
-    max-width: 60vw;
+    max-width: 25vw;
     border-radius: 10px;
     margin: 0 30px 50px 30px;
     color: white;
@@ -146,6 +146,7 @@ button {
     color: #292932;
     margin: 0;
     font-size: 20px;
+    text-align: center;
 }
 
 .cardContent {
@@ -163,7 +164,7 @@ button {
 
 
 .jobDescription {
-    text-align: center;
+    text-align: left;
 }
 
 .jobIllustration {
@@ -359,6 +360,7 @@ button {
     }
     .card {
         margin-bottom: 20px;
+        max-width: 60vw;
     }
     .nextCategory {
         margin-bottom: 20px;
