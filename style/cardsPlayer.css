@@ -73,13 +73,22 @@ button {
 }
 
 .previousCard > img, .nextCard > img {
+    min-height: 40px;
     height: 15vw;
 }
 
 .previousCategory > img, .nextCategory > img {
+    min-width: 40px;
     width: 15vw;
 }
 
+.previousCard {
+    margin-left: 10px;
+}
+
+.nextCard {
+    margin-right: 10px;
+}
 
 /*--------------CATEGORIES MANAGER----------------*/
 
@@ -99,10 +108,10 @@ button {
 /*--------------CARDS MANAGER----------------*/
 
 .cardsManager {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
  }
 
 .cardsContainer {
