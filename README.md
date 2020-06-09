@@ -45,7 +45,7 @@ Nous avons volontairement limité la largeur des cartes même sur grand écran. 
 
 Pour réaliser notre site nous n'avons utilisé aucun framework. Pour la mise en page, les propriétés css flexbox et les unités relatives au viewport (vw et vh) nous semblaient largement suffisantes, et ne nécéssitaient pas d'importer une bibliothèque complète. Cela aurait eu un impact négatif sur la vitesse de chargement de la page.
 
-Pour le système de gestion de carte, nous avons voulu faire notre propre code avec javascript. Utiliser une librairie de caroussel n'aurait pas été adapté puisque le notre est en deux dimensions. De plus, l'implémentation des boutons de navigation vers chaque catégorie aurait été plus compliqué.
+Pour le système de gestion de cartes, nous avons voulu faire notre propre code avec javascript. Utiliser une librairie de caroussel n'aurait pas été adapté puisque le nôtre est en deux dimensions. De plus, l'implémentation des boutons de navigation vers chaque catégorie aurait été plus compliquée avec un framework.
 
 Concernant le design, nous avons attribué une couleur à chaque catégorie afin de donner des repères à l'utilisateur. Cela permet aussi de garder une certaine cohérence dans le design.
 
