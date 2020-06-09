@@ -1,35 +1,32 @@
 /*--------------CARDS PLAYER----------------*/
 
-#categoriesManager {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 95%;
-}
-
 button {
     cursor: pointer;
-}
-
-#goToCategoryMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5px 1vw 5px 1vw;
-    max-width: 75%;
 }
 
 .goToCategoryButton {
     margin: 5px 10px;
 }
 
+.goToCategoryButton {
+    color: white;
+    font-size: 14px;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color, transform .35s;
+}
+
+.goToCategoryButton:active {
+    transform: scale(1.1);
+}
+
 .navigationButton {
     display: flex;
     background-color: transparent;
     border: none;
-    transition: transform 0.45s;
+    transition: transform .45s;
+    align-items: center;
 }
 
 .navigationButton:active {
@@ -41,8 +38,8 @@ button {
 }
 
 .navigationButton img {
-    opacity: 0.7;
-    transition: opacity 0.45s;
+    opacity: .7;
+    transition: opacity .45s;
 }
 
 .navigationButton > span {
@@ -50,35 +47,32 @@ button {
     color: #dadada;
 }
 
-.previousCategory, .nextCategory {
-    flex-direction: column;
-    align-items: center;
-}
-
-.previousCategory {
-    padding-top: 10px;
-    margin-top: 20px;
-}
-
-.nextCard, .previousCard {
-    align-items: center;
-}
-
 .previousCategory {
     flex-direction: column-reverse;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.nextCategory {
+    flex-direction: column;
+}
+
+.previousCategory > img, .nextCategory > img {
+    min-width: 150px;
+    width: 15vw;
 }
 
 .previousCard {
     flex-direction: row-reverse;
 }
 
-.nextCard {
-    flex-direction: row;
-}
-
 .previousCard > span {
     text-align: right;
     margin-right: 7px;
+}
+
+.nextCard {
+    flex-direction: row;
 }
 
 .nextCard > span {
@@ -91,17 +85,25 @@ button {
     height: 15vw;
 }
 
-.previousCategory > img, .nextCategory > img {
-    min-width: 150px;
-    width: 15vw;
+#categoriesManager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+#goToCategoryMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 1vw 5px 1vw;
+    max-width: 75%;
 }
 
 
 /*--------------CATEGORIES MANAGER----------------*/
-
-.category.displayed {
-    display: flex;
-}
 
 .category {
     display: none;
@@ -109,6 +111,10 @@ button {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+}
+
+.category.displayed {
+    display: flex;
 }
 
 
@@ -130,10 +136,6 @@ button {
     width: 90%;
 }
 
-.card.displayed {
-    display: flex !important;
-}
-
 .card {
     display: none;
     flex-direction: column;
@@ -146,6 +148,10 @@ button {
     margin: 0 30px 50px 30px;
     color: white;
     background-color: rgba(57, 74, 84, 0);
+}
+
+.card.displayed {
+    display: flex !important;
 }
 
 .cardTitle {
@@ -178,8 +184,6 @@ button {
     font-size: 14px;
 }
 
-
-
 .jobDescription {
     text-align: left;
 }
@@ -199,13 +203,15 @@ button {
     margin: 7px;
 }
 
-.keyInformation > li > span {
+.keyInformation span {
     font-weight: normal;
     color: #d0d0d0;
 }
 
 
-/*Themes des cartes selon la catégorie*/
+/*--------------Category Themes--------------*/
+
+/*---Web---*/
 
 #categoryWeb .card {
     box-shadow: rgba(240, 95, 136, .5) 0 0 70px;
@@ -220,6 +226,16 @@ button {
     color: #F05F88;
 }
 
+#goToCategoryWeb {
+    background-color: rgba(199, 35, 96, .8);
+}
+
+#goToCategoryWeb:hover {
+    background-color: rgba(199, 35, 96, 1);
+}
+
+
+/*---Sécurité---*/
 
 #categorySecurity .card {
     box-shadow: rgba(138, 187, 230, .32) 0 0 70px;
@@ -234,6 +250,16 @@ button {
     color: #8ABBE6;
 }
 
+#goToCategorySecurity {
+    background-color: rgba(71, 142, 205, .8);
+}
+
+#goToCategorySecurity:hover {
+    background-color: rgba(71, 142, 205, 1);
+}
+
+
+/*---Jeux vidéo---*/
 
 #categoryVideoGames .card {
     box-shadow: rgba(169, 102, 171, .55) 0 0 50px;
@@ -248,9 +274,18 @@ button {
     color: #A966AB;
 }
 
+#goToCategoryVideoGames {
+    background-color: rgba(127, 59, 137, .8);
+}
 
+#goToCategoryVideoGames:hover {
+    background-color: rgba(127, 59, 137, 1);
+}
+
+
+/*---Science---*/
 #categoryScience .card {
-    box-shadow: rgba(120, 196, 124, 0.38) 0 0 50px;
+    box-shadow: rgba(120, 196, 124, .38) 0 0 50px;
     background-color: #304347;
 }
 
@@ -263,8 +298,9 @@ button {
 }
 
 
+/*---Data---*/
 #categoryData .card {
-    box-shadow: rgba(254, 210, 85, 0.3) 0 0 60px;
+    box-shadow: rgba(254, 210, 85, .3) 0 0 60px;
     background-color: #374246;
 }
 
@@ -277,6 +313,7 @@ button {
 }
 
 
+/*---Commerce---*/
 #categoryTrading .card {
     box-shadow: rgba(245, 127, 97, .35) 0 0 70px;
     background-color: #383F45;
@@ -290,47 +327,6 @@ button {
     color: #F57F61;
 }
 
-
-/*Themes des boutons de catégorie*/
-
-.goToCategoryButton {
-    color: white;
-    font-size: 14px;
-    padding: 3px 8px;
-    border: none;
-    border-radius: 10px;
-    transition: background-color, transform .35s;
-}
-
-.goToCategoryButton:active {
-    transform: scale(1.1);
-}
-
-#goToCategoryWeb {
-    background-color: rgba(199, 35, 96, .8);
-}
-
-#goToCategoryWeb:hover {
-    background-color: rgba(199, 35, 96, 1);
-}
-
-
-#goToCategoryVideoGames {
-    background-color: rgba(127, 59, 137, .8);
-}
-
-#goToCategoryVideoGames:hover {
-    background-color: rgba(127, 59, 137, 1);
-}
-
-
-#goToCategorySecurity {
-    background-color: rgba(71, 142, 205, .8);
-}
-
-#goToCategorySecurity:hover {
-    background-color: rgba(71, 142, 205, 1);
-}
 
 
 #goToCategoryScience {
@@ -388,12 +384,12 @@ button {
     .previousCard img, .nextCard img {
         width: 4vw;
     }
-    .cardContent {
-        min-width: unset;
-    }
     .card {
         max-width: unset;
         width: 70vw;
+    }
+    .cardContent {
+        min-width: unset;
     }
     #footerBottom > p {
         font-size: 9px;
