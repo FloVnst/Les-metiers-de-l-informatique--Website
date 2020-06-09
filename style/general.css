@@ -68,26 +68,7 @@ main {
     overflow-y: auto;
 }
 
-/*--------------PAGE SITEMAP--------------*/
 
-details{
-    color : white;
-    padding-bottom: 30px;
-}
-
-details > summary{
-    font-size: 25px;
-}
-
-#left{
-    margin-right : 70%;
-    padding-left: 5%;
-}
-
-#right{
-    padding-left: 20%;
-    padding-top: 0px;
-}
 /*--------------FOOTER--------------*/
 
 footer {
@@ -101,21 +82,20 @@ footer {
     width: 100vw;
 }
 
+footer a {
+    margin: 7px 10px;
+}
+
+footer a, footer p {
+    padding: 0;
+    text-align: center;
+}
 
 footer > div {
     flex-direction: row;
     align-items: center;
     margin : 0;
     display: flex;
-}
-
-footer > div > a {
-    margin: 7px 10px;
-}
-
-footer > div > a, footer > div > p {
-    padding: 0;
-    text-align: center;
 }
 
 #footerTop {

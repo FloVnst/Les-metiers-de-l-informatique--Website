@@ -1,0 +1,20 @@
+/*--------------PAGE SITEMAP--------------*/
+
+details{
+    color : white;
+    padding-bottom: 30px;
+}
+
+details > summary{
+    font-size: 25px;
+}
+
+#left{
+    margin-right : 70%;
+    padding-left: 5%;
+}
+
+#right{
+    padding-left: 20%;
+    padding-top: 0;
+}
