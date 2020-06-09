@@ -27,7 +27,6 @@ button {
 
 .navigationButton {
     display: flex;
-    flex-direction: column;
     background-color: transparent;
     border: none;
     transition: transform 0.45s;
@@ -52,6 +51,7 @@ button {
 }
 
 .previousCategory, .nextCategory {
+    flex-direction: column;
     align-items: center;
 }
 
@@ -60,35 +60,42 @@ button {
     margin-top: 20px;
 }
 
+.nextCard, .previousCard {
+    align-items: center;
+}
+
 .previousCategory {
     flex-direction: column-reverse;
 }
 
 .previousCard {
-    align-items: flex-end;
+    flex-direction: row-reverse;
 }
 
 .nextCard {
-    align-items: flex-start;
+    flex-direction: row;
+}
+
+.previousCard > span {
+    text-align: right;
+    margin-right: 7px;
+}
+
+.nextCard > span {
+    text-align: left;
+    margin-left: 7px;
 }
 
 .previousCard > img, .nextCard > img {
-    min-height: 40px;
+    min-height: 100px;
     height: 15vw;
 }
 
 .previousCategory > img, .nextCategory > img {
-    min-width: 40px;
+    min-width: 150px;
     width: 15vw;
 }
 
-.previousCard {
-    margin-left: 10px;
-}
-
-.nextCard {
-    margin-right: 10px;
-}
 
 /*--------------CATEGORIES MANAGER----------------*/
 
@@ -120,6 +127,7 @@ button {
     justify-content: center;
     align-items: center;
     min-width: 35vw;
+    width: 90%;
 }
 
 .card.displayed {
