@@ -9,4 +9,4 @@ function internetExplorerDisclaimer() {
     }
 }
 
-window.addEventListener("load", internetExplorerDisclaimer)
+window.addEventListener("load", internetExplorerDisclaimer);

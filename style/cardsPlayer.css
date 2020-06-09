@@ -36,13 +36,13 @@ button {
     transform: scale(1.03);
 }
 
+.navigationButton:hover img {
+    opacity: 1;
+}
+
 .navigationButton img {
     opacity: 0.7;
     transition: opacity 0.45s;
-}
-
-.navigationButton:hover img {
-    opacity: 1;
 }
 
 .navigationButton > span {
