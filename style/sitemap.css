@@ -2,9 +2,36 @@
 
 details{
     color : white;
-    padding-bottom: 30px;
+    width: 40%;
+    margin: 20px 10px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #3A3E47;
+    padding: 10px;
 }
 
 details > summary{
     font-size: 25px;
+}
+
+#categoriesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+}
+
+details > hr{
+    width: 80%;
+    margin-left: 0;
+}
+
+ul{
+    list-style-type: square;
+    border-left: 5px solid white;
+    padding: 20px auto;
 }
