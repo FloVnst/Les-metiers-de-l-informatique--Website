@@ -199,13 +199,7 @@ button {
 
 .keyInformation > li {
     list-style: none;
-    font-weight: bold;
     margin: 7px;
-}
-
-.keyInformation span {
-    font-weight: normal;
-    color: #d0d0d0;
 }
 
 
@@ -222,6 +216,14 @@ button {
     background-color: #F05F88;
 }
 
+#categoryWeb ::-webkit-scrollbar-track {
+    background-color: rgba(179, 30, 52, .2);
+}
+
+#categoryWeb ::-webkit-scrollbar-thumb {
+    background-color: rgba(240, 95, 136, .4);
+}
+
 #categoryWeb h2 {
     color: #F05F88;
 }
@@ -235,30 +237,6 @@ button {
 }
 
 
-/*---Sécurité---*/
-
-#categorySecurity .card {
-    box-shadow: rgba(138, 187, 230, .32) 0 0 70px;
-    background-color: #2E404A;
-}
-
-#categorySecurity .cardTitle {
-    background-color: #8ABBE6;
-}
-
-#categorySecurity h2 {
-    color: #8ABBE6;
-}
-
-#goToCategorySecurity {
-    background-color: rgba(71, 142, 205, .8);
-}
-
-#goToCategorySecurity:hover {
-    background-color: rgba(71, 142, 205, 1);
-}
-
-
 /*---Jeux vidéo---*/
 
 #categoryVideoGames .card {
@@ -268,6 +246,14 @@ button {
 
 #categoryVideoGames .cardTitle {
     background-color: #A966AB;
+}
+
+#categoryVideoGames ::-webkit-scrollbar-track {
+    background-color: rgba(87, 41, 111, .4);
+}
+
+#categoryVideoGames ::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 102, 171, .4);
 }
 
 #categoryVideoGames h2 {
@@ -283,6 +269,38 @@ button {
 }
 
 
+/*---Sécurité---*/
+
+#categorySecurity .card {
+    box-shadow: rgba(138, 187, 230, .32) 0 0 70px;
+    background-color: #2E404A;
+}
+
+#categorySecurity .cardTitle {
+    background-color: #8ABBE6;
+}
+
+#categorySecurity ::-webkit-scrollbar-track {
+    background-color: rgba(38, 106, 176, .2);
+}
+
+#categorySecurity ::-webkit-scrollbar-thumb {
+    background-color: rgba(138, 187, 230, .4);
+}
+
+#categorySecurity h2 {
+    color: #8ABBE6;
+}
+
+#goToCategorySecurity {
+    background-color: rgba(71, 142, 205, .8);
+}
+
+#goToCategorySecurity:hover {
+    background-color: rgba(71, 142, 205, 1);
+}
+
+
 /*---Science---*/
 #categoryScience .card {
     box-shadow: rgba(120, 196, 124, .38) 0 0 50px;
@@ -293,8 +311,24 @@ button {
     background-color: #78c47c;
 }
 
+#categoryScience ::-webkit-scrollbar-track {
+    background-color: rgba(41, 137, 69, .2);
+}
+
+#categoryScience ::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 196, 124, .4);
+}
+
 #categoryScience h2 {
     color: #78c47c;
+}
+
+#goToCategoryScience {
+    background-color: rgba(79, 159, 79, .8);
+}
+
+#goToCategoryScience:hover {
+    background-color: rgba(79, 159, 79, 1);
 }
 
 
@@ -308,8 +342,24 @@ button {
     background-color: #FED255;
 }
 
+#categoryData ::-webkit-scrollbar-track {
+    background-color: rgba(181, 115, 41, .2);
+}
+
+#categoryData ::-webkit-scrollbar-thumb {
+    background-color: rgba(254, 210, 85, .4);
+}
+
 #categoryData h2 {
     color: #FED255;
+}
+
+#goToCategoryData {
+    background-color: rgba(224, 157, 44, .8);
+}
+
+#goToCategoryData:hover {
+    background-color: rgba(224, 157, 44, 1);
 }
 
 
@@ -323,29 +373,17 @@ button {
     background-color: #F57F61;
 }
 
+#categoryTrading ::-webkit-scrollbar-track {
+    background-color: rgba(195, 33, 38, .2);
+}
+
+#categoryTrading ::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 127, 97, .4);
+}
+
 #categoryTrading h2 {
     color: #F57F61;
 }
-
-
-
-#goToCategoryScience {
-    background-color: rgba(79, 159, 79, .8);
-}
-
-#goToCategoryScience:hover {
-    background-color: rgba(79, 159, 79, 1);
-}
-
-
-#goToCategoryData {
-    background-color: rgba(224, 157, 44, .8);
-}
-
-#goToCategoryData:hover {
-    background-color: rgba(224, 157, 44, 1);
-}
-
 
 #goToCategoryTrading {
     background-color: rgba(203, 82, 67, .8);

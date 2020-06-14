@@ -19,6 +19,27 @@ h1, h2 {
     color: white;
 }
 
+p a {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.keyInformation > li {
+    font-weight: bold;
+}
+
+.keyInformation span {
+    font-weight: normal;
+    color: #d0d0d0;
+}
+
 
 /*--------------HEADER----------------*/
 
@@ -35,28 +56,30 @@ header {
     max-height: 120px;
 }
 
-header > img {
+header > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+header img {
     max-height: 100px;
     min-height: 70px;
     height: 10vh;
     margin: 15px;
 }
 
-#homeIcon{
-    height: 50px;
-    width: 50px;
-}
-
-header > a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-}
-
 header h1 {
     font-weight: 700;
     font-size: 23px;
-    margin-left:30px;
+}
+
+#homeIcon{
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
 }
 
 
@@ -89,10 +112,6 @@ footer {
     width: 100vw;
 }
 
-footer a {
-    margin: 7px 10px;
-}
-
 footer a, footer p {
     padding: 0;
     text-align: center;
@@ -113,8 +132,9 @@ footer > div {
 #footerTop > a {
     color : white;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
+    margin: 7px 10px;
 }
 
 #footerBottom{
@@ -130,6 +150,23 @@ footer > div {
 }
 
 
+/*--------------SCROLLBAR--------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(10, 10, 10, 0.5);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgba(150, 150, 150, 0.175);
+}
+
+
 /*--------------SMALL SCREENS ADJUSTMENTS--------------*/
 
 @media screen and (max-width: 900px) {
@@ -138,5 +175,11 @@ footer > div {
     }
     main {
         width: 100vw !important;
+    }
+    #homeIcon {
+        display: none;
+    }
+    #footerTop > a {
+        font-size: 12px;
     }
 }
