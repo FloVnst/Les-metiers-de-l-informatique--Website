@@ -1,23 +1,5 @@
 /*--------------PAGE CREDITS--------------*/
 
-ul{
-    list-style-type: square;
-    padding: 20px auto;
-}
-
-li{
-    margin-top: 13px;
-}
-
-hr {
-    background: linear-gradient(to right, #F05F88, #A966AB, #8ABBE6, #78C47C, #FED255, #F57F61);
-    height: 2px;
-    border: none;
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 22px;
-}
-
 details{
     color : white;
     width: 80%;
@@ -31,6 +13,25 @@ details{
 
 details > summary{
     font-size: 25px;
+}
+
+ul{
+    list-style-type: square;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+li{
+    margin-top: 13px;
+}
+
+hr {
+    background: linear-gradient(to right, #F05F88, #A966AB, #8ABBE6, #78C47C, #FED255, #F57F61);
+    height: 2px;
+    border: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 22px;
 }
 
 #creditsContainer{
