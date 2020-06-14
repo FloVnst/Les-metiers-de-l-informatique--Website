@@ -13,7 +13,7 @@ https://florianvaneste.github.io/Les-metiers-de-l-informatique--Website/
 
 Le but de notre site est de donner une vue générale sur les métiers de l'informatique.
 
-Nous avons donc cherché à donner les informations essentielles pour chaque métiers, de manière synthétique.
+Nous avons donc cherché à donner les informations essentielles pour chaque métier, de manière synthétique.
 
 <br>
 
@@ -51,10 +51,10 @@ Concernant le design, nous avons attribué une couleur à chaque catégorie afin
 
 <br>
 
-## Choix du contenu et répartition
+## Choix du contenu et disposition
 
 Nous avions déjà réalisé des travaux de recherche sur l'ensemble des métiers de l'informatique et en avions fait des affiches. Le contenu nous semblait pertinent et adapté à ce projet.
 
-Nous avons donc repris ce contenu et avons adapté sa mise en forme pour le web.
+Nous avons donc repris ce contenu et l'avons adapté pour le web.
 
 Les informations clé de chaque métier (salaire, formation...) ont été mises en valeur en bas de chaque carte afin que ces informations soit facilement visibles sur chaque carte.
