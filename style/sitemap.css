@@ -124,3 +124,12 @@ li {
 #CategoryTrading {
     background-color: #383F45;
 }
+
+
+/*--------------SMALL SCREENS ADJUSTMENTS--------------*/
+
+@media screen and (max-width: 700px) {
+    details {
+        width: 80%;
+    }
+}
