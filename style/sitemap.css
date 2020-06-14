@@ -85,7 +85,7 @@ li {
 #CategorySecurity > summary::marker, #CategorySecurity > summary::-webkit-details-marker {
     color : #8ABBE6;
 }
-#Category hr {
+#CategorySecurity hr {
     background-color: #8ABBE6;
 }
 
@@ -100,7 +100,7 @@ li {
 #CategoryScience > summary::marker, #CategoryScience> summary::-webkit-details-marker {
     color : #78c47c;
 }
-#Category hr {
+#CategoryScience hr {
     background-color: #78c47c;
 }
 
@@ -115,7 +115,7 @@ li {
 #CategoryData > summary::marker, #CategoryData > summary::-webkit-details-marker {
     color : #FED255;
 }
-#Category hr {
+#CategoryData hr {
     background-color: #FED255;
 }
 
@@ -131,7 +131,7 @@ li {
 #CategoryTrading > summary::marker, #CategoryTrading > summary::-webkit-details-marker {
     color : #F57F61;
 }
-#Category hr {
+#CategoryTrading hr {
     background-color: #F57F61;
 }
 
