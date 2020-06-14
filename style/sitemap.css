@@ -20,6 +20,8 @@ details > hr {
     width: 80%;
     margin-left: 0;
     margin-bottom: 22px;
+    border: none;
+    height: 2px;
 }
 
 ul {
@@ -43,86 +45,94 @@ li {
 
 
 /*---Web---*/
-
+#CategoryWeb {
+    background-color: #3A3E47;
+}
 #CategoryWeb > summary::marker, #CategoryWeb > summary::-webkit-details-marker {
     color : #F05F88;
 }
-
+#CategoryWeb hr {
+    background-color: #F05F88;
+}
 #CategoryWeb > ul {
     border-left: 5px solid #F05F88;
-}
-#CategoryWeb {
-    background-color: #3A3E47;
 }
 
 
 /*---Jeux vidéo---*/
-
-#CategoryVideoGame > summary::marker, #CategoryVideoGame > summary::-webkit-details-marker {
-    color : #A966AB;
+#CategoryVideoGame {
+    background-color: #373F4B;
 }
-
 #CategoryVideoGame > ul {
     border-left: 5px solid #A966AB;
 }
-#CategoryVideoGame {
-    background-color: #373F4B;
+#CategoryVideoGame > summary::marker, #CategoryVideoGame > summary::-webkit-details-marker {
+    color : #A966AB;
+}
+#CategoryVideoGame hr {
+    background-color: #A966AB;
 }
 
 
 /*---Sécurité---*/
 
-#CategorySecurity > summary::marker, #CategorySecurity > summary::-webkit-details-marker {
-    color : #8ABBE6;
+#CategorySecurity{
+    background-color: #2E404A;
 }
-
 #CategorySecurity > ul{
     border-left: 5px solid #8ABBE6;
 }
-#CategorySecurity{
-    background-color: #2E404A;
+#CategorySecurity > summary::marker, #CategorySecurity > summary::-webkit-details-marker {
+    color : #8ABBE6;
+}
+#Category hr {
+    background-color: #8ABBE6;
 }
 
 
 /*---Science---*/
-
-#CategoryScience > summary::marker, #CategoryScience> summary::-webkit-details-marker {
-    color : #78c47c;
+#CategoryScience {
+    background-color: #304347;
 }
-
 #CategoryScience > ul {
     border-left: 5px solid #78c47c;
 }
-#CategoryScience {
-    background-color: #304347;
+#CategoryScience > summary::marker, #CategoryScience> summary::-webkit-details-marker {
+    color : #78c47c;
+}
+#Category hr {
+    background-color: #78c47c;
 }
 
 
 /*---Data---*/
-
-#CategoryData > summary::marker, #CategoryData > summary::-webkit-details-marker {
-    color : #FED255;
+#CategoryData {
+    background-color: #374246;
 }
-
 #CategoryData > ul {
     border-left: 5px solid #FED255;
 }
-#CategoryData {
-    background-color: #374246;
+#CategoryData > summary::marker, #CategoryData > summary::-webkit-details-marker {
+    color : #FED255;
+}
+#Category hr {
+    background-color: #FED255;
 }
 
 
 /*---Commerce---*/
 
-#CategoryTrading > summary::marker, #CategoryTrading > summary::-webkit-details-marker {
-    color : #F57F61;
+#CategoryTrading {
+    background-color: #383F45;
 }
-
 #CategoryTrading > ul {
     border-left: 5px solid #F57F61;
 }
-#CategoryTrading {
-    background-color: #383F45;
+#CategoryTrading > summary::marker, #CategoryTrading > summary::-webkit-details-marker {
+    color : #F57F61;
+}
+#Category hr {
+    background-color: #F57F61;
 }
 
 
