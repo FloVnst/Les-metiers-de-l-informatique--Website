@@ -152,18 +152,19 @@ footer > div {
 
 /*--------------SCROLLBAR--------------*/
 
-::-webkit-scrollbar {
-    width: 12px;
-}
+@media screen and (min-width: 900px) {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: rgba(10, 10, 10, 0.5);
+        border-radius: 6px;
+    }
 
-::-webkit-scrollbar-track {
-    background-color: rgba(10, 10, 10, 0.5);
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: rgba(150, 150, 150, 0.175);
+    ::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba(150, 150, 150, 0.175);
+    }
 }
 
 
@@ -175,6 +176,17 @@ footer > div {
     }
     main {
         width: 100vw !important;
+    }
+    ::-webkit-scrollbar {
+        width: auto;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: unset;
+        border-radius: unset;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: unset;
+        background-color: unset;
     }
     #homeIcon {
         display: none;
