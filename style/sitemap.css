@@ -130,6 +130,6 @@ li {
 
 @media screen and (max-width: 700px) {
     details {
-        width: 80%;
+        width: 70%;
     }
 }
