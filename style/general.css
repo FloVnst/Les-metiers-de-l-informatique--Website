@@ -194,4 +194,7 @@ footer > div {
     #footerTop > a {
         font-size: 12px;
     }
+    #footerBottom > p {
+        font-size: 10px;
+    }
 }
