@@ -51,7 +51,7 @@ Concernant le design, nous avons attribué une couleur à chaque catégorie afin
 
 <br>
 
-## Choix du contenu et répartition
+## Choix du contenu et disposition
 
 Nous avions déjà réalisé des travaux de recherche sur l'ensemble des métiers de l'informatique et en avions fait des affiches. Le contenu nous semblait pertinent et adapté à ce projet.
 
