@@ -58,3 +58,33 @@ Nous avions déjà réalisé des travaux de recherche sur l'ensemble des métier
 Nous avons donc repris ce contenu et l'avons adapté pour le web.
 
 Les informations clé de chaque métier (salaire, formation...) ont été mises en valeur en bas de chaque carte afin que ces informations soit facilement visibles sur chaque carte.
+
+<br>
+
+## Plan du site
+
+Nous y avons répertorié les noms des métiers présentés sur notre site. Nous les avons regroupé par catégorie pour plus de clarté et pour les retrouver facilement sur notre site.
+
+<br>
+
+## Crédits
+
+Nous avons repris les textes et illustrations d'affiches réalisées auparavant sur les métiers de l'informatique. 
+Les personnes les ayant réalisé ont donc été créditées (Ethan Cybulski, Thomas Cottrez et Florian Vaneste).
+
+Les sources utilisées pour la conception de ces affiches ont également été renseignées dans notre rubrique Crédits.
+
+Par soucis de transparence nous vous joignons le lien du dépôt des affiches :
+https://github.com/FlorianVaneste/Les-metiers-de-l-informatique--Affiches
+
+<br>
+
+## Optimisations, accessibilité et validité W3C
+
+Nous avons cherché à optimiser la vitesse de chargement de notre site.
+Nous avons donc cherché à privilégier les images au format vectoriel (svg), et avons compressé les autres images.
+Pour tester et améliorer la performance du site et l'accessibilité, nous avons utilisé les outils PageSpeed Insights et Lightroom.
+
+Toutes nos pages ont été passées au validateur W3C et n'ont présenté aucune erreur.
+
+Pour faciliter la mise en place du responsive design, nous avons utilisé Flexbox et des unités relatives (vw, vh et %).
