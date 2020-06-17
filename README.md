@@ -74,7 +74,7 @@ Les personnes les ayant réalisé ont donc été créditées (Ethan Cybulski, Th
 
 Les sources utilisées pour la conception de ces affiches ont également été renseignées dans notre rubrique Crédits.
 
-Par soucis de transparence nous vous joignons le lien du dépôt des affiches :
+Par soucis de transparence nous vous joignons le lien du dépôt des affiches :  
 https://github.com/FlorianVaneste/Les-metiers-de-l-informatique--Affiches
 
 <br>
