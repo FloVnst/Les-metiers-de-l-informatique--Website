@@ -3,7 +3,7 @@
 
 Site créé par Florian Vaneste, Marie Verraest, Loïck Mercier, Anaïs Revelle, Germain Poloudenny et Alexy Pawlicki.  
 
----
+<br>
 
 **Aperçu du site :**  
 https://florianvaneste.github.io/Les-metiers-de-l-informatique--Website/
