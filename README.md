@@ -89,10 +89,10 @@ Nous avons cherché à optimiser la vitesse de chargement de notre site.
 Nous avons donc cherché à privilégier les images au format vectoriel (svg), et avons compressé les autres images.
 Pour tester et améliorer la performance du site et l'accessibilité, nous avons utilisé les outils PageSpeed Insights et Lighthouse.
 
-!["](documentation/lighthouseDesktop.png)
+!["](documentation/lighthouseDesktop.png)  
 *Audit Lighthouse sur la homepage (Desktop)*
 
-!["](documentation/lighthouseMobile.png)
+!["](documentation/lighthouseMobile.png)  
 *Audit Lighthouse sur la homepage (Mobile)*
 
 <br>
@@ -106,5 +106,5 @@ Pour faciliter la mise en place du responsive design, nous avons utilisé Flexbo
 Nous avons aussi amélioré la SEO puisque les sites réalisés sont suiceptibles d'être publiés.  
 Pour cela, nous avons réalisé un fichier sitemap.xml et rempli les balises meta description.
 
-En termes d'accessibilité, notre site est certifié WCAG 2.0 (Level AA).
+En termes d'accessibilité, notre site est certifié WCAG 2.0 (Level AA).  
 [Voir le rapport d'accessibilité AChecker](documentation/achecker_accessibilityReport.pdf)
