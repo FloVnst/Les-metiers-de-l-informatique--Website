@@ -95,6 +95,8 @@ Pour tester et améliorer la performance du site et l'accessibilité, nous avons
 !["](documentation/lighthouseDesktop.png)  
 *Audit Lighthouse sur la homepage (Desktop)*
 
+<br>
+
 !["](documentation/lighthouseMobile.png)  
 *Audit Lighthouse sur la homepage (Mobile)*
 
