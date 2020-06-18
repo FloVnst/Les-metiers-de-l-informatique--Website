@@ -21,7 +21,7 @@ Nous avons donc cherché à donner les informations essentielles pour chaque mé
 
 Pour rendre notre site plus interactif, nous avons voulu intégrer un système de cartes présentant chaque métier.
 
-![](images/readme/interface.png)
+![](images/readme/homepage.png)
 
 Nous les avons ensuite regroupées par catégories :
 - Web
@@ -63,11 +63,15 @@ Les informations clé de chaque métier (salaire, formation...) ont été mises 
 
 ## Plan du site
 
+![](images/readme/sitemap.png)
+
 Nous y avons répertorié les noms des métiers présentés sur notre site. Nous les avons regroupé par catégorie pour plus de clarté et pour les retrouver facilement sur notre site.
 
 <br>
 
 ## Crédits
+
+![](images/readme/credits.png)
 
 Nous avons repris les textes et illustrations d'affiches réalisées auparavant sur les métiers de l'informatique. 
 Les personnes les ayant réalisé ont donc été créditées (Ethan Cybulski, Thomas Cottrez et Florian Vaneste).
@@ -83,8 +87,14 @@ https://github.com/FlorianVaneste/Les-metiers-de-l-informatique--Affiches
 
 Nous avons cherché à optimiser la vitesse de chargement de notre site.
 Nous avons donc cherché à privilégier les images au format vectoriel (svg), et avons compressé les autres images.
-Pour tester et améliorer la performance du site et l'accessibilité, nous avons utilisé les outils PageSpeed Insights et Lightroom.
+Pour tester et améliorer la performance du site et l'accessibilité, nous avons utilisé les outils PageSpeed Insights et Lighthouse.
+
+![](images/readme/lighthouse.png)
+
+<br>
 
 Toutes nos pages ont été passées au validateur W3C et n'ont présenté aucune erreur.
+
+![](images/readme/w3c.png)
 
 Pour faciliter la mise en place du responsive design, nous avons utilisé Flexbox et des unités relatives (vw, vh et %).
