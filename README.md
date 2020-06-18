@@ -22,6 +22,7 @@ Nous avons donc cherché à donner les informations essentielles pour chaque mé
 Pour rendre notre site plus interactif, nous avons voulu intégrer un système de cartes présentant chaque métier.
 
 ![](documentation/homepage.png)
+*Page d'accueil (page principale du site)*
 
 Nous les avons ensuite regroupées par catégories :
 - Web
@@ -63,7 +64,8 @@ Les informations clé de chaque métier (salaire, formation...) ont été mises 
 
 ## Plan du site
 
-![](documentation/sitemap.png)
+![](documentation/sitemap.png)  
+*Page Plan du site*
 
 Nous y avons répertorié les noms des métiers présentés sur notre site. Nous les avons regroupé par catégorie pour plus de clarté et pour les retrouver facilement sur notre site.
 
@@ -71,7 +73,8 @@ Nous y avons répertorié les noms des métiers présentés sur notre site. Nous
 
 ## Crédits
 
-![](documentation/credits.png)
+![](documentation/credits.png)   
+*Page Crédits*
 
 Nous avons repris les textes et illustrations d'affiches réalisées auparavant sur les métiers de l'informatique. 
 Les personnes les ayant réalisé ont donc été créditées (Ethan Cybulski, Thomas Cottrez et Florian Vaneste).
@@ -99,7 +102,8 @@ Pour tester et améliorer la performance du site et l'accessibilité, nous avons
 
 Toutes nos pages ont été passées au validateur W3C et n'ont présenté aucune erreur.
 
-![](documentation/w3c.png)
+![](documentation/w3c.png)  
+*Validation W3C - https://validator.w3.org/unicorn/*
 
 Pour faciliter la mise en place du responsive design, nous avons utilisé Flexbox et des unités relatives (vw, vh et %).
 
