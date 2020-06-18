@@ -1,4 +1,4 @@
-# Les métiers de l'informatique (website)
+# Les métiers de l'informatique – Website (2020)
 
 Site créé par Florian Vaneste, Marie Verraest, Loïck Mercier, Anaïs Revelle, Germain Poloudenny et Alexy Pawlicki.  
 
