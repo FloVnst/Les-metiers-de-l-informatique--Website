@@ -1,5 +1,5 @@
 # Les métiers de l'informatique – Website (2020)  
-**Semestre 1 de DUT informatique**  
+**Semestre 2 de DUT informatique**  
 
 Site créé par Florian Vaneste, Marie Verraest, Loïck Mercier, Anaïs Revelle, Germain Poloudenny et Alexy Pawlicki.  
 
