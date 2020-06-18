@@ -16,6 +16,7 @@ Le but de notre site est de donner une vue générale sur les métiers de l'info
 Nous avons donc cherché à donner les informations essentielles pour chaque métier, de manière synthétique.
 
 <br>
+<br>
 
 ## Interface et hierarchisation des informations
 
